@@ -16,14 +16,7 @@ CherryGit has dependencies of:
 Also, you need your own virtual dedicated server, which will listen for the webhook and execute the git pull via ssh. You can grab a dedicated virtual server from https://www.digitalocean.com/ or from http://linode.com/ .. both are great.
 
 So, in summation the auto-update process looks like this:
-```flow
-git_push=>start: git push
-git_pull=>end: git pull
-cherrygit=>operation: CherryGit
-sharedserver=>operation: SSH to Shared Server
-
-git_push->cherrygit->sharedserver->git_pull
-```
+> git push -> (via webhook) -> CherryGit -> (ssh) -> Shared Server -> git pull
 
 Now, time to configure and setup CherryGit.
 
