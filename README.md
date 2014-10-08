@@ -13,7 +13,8 @@ CherryGit has dependencies of:
 	- Python 2.7
 	- cherrypy (pip install cherrypy)
 	- fabric (pip install fabric)
-	- start-stop-daemon (If you have CentOS install instructions are here: http://florent.clairambault.fr/get-start-stop-daemon-on-any-linux)
+	- start-stop-daemon (If you have CentOS install instructions are here: 
+		http://florent.clairambault.fr/get-start-stop-daemon-on-any-linux)
 ```
 
 Also, you need your own virtual dedicated server, which will listen for the webhook and execute the git pull via ssh. You can grab a dedicated virtual server from https://www.digitalocean.com/ or from http://linode.com/ .. both are great.
