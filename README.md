@@ -7,13 +7,15 @@ CherryGit is a webhook for git that will SSH into another server and update git 
 
 	- Your website is on a shared server and you don't have exec() or exec_shell() pirvileges with php
 	- Your PHP user doesn't have permission to update the website's git repo
-	
+
 CherryGit has dependencies of:
+```
 	- Python 2.7
 	- cherrypy (pip install cherrypy)
 	- fabric (pip install fabric)
 	- start-stop-daemon (If you have CentOS install instructions are here: http://florent.clairambault.fr/get-start-stop-daemon-on-any-linux)
-	
+```
+
 Also, you need your own virtual dedicated server, which will listen for the webhook and execute the git pull via ssh. You can grab a dedicated virtual server from https://www.digitalocean.com/ or from http://linode.com/ .. both are great.
 
 So, in summation the auto-update process looks like this:
